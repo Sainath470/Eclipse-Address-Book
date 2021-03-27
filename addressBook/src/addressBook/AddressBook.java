@@ -54,35 +54,20 @@ public class AddressBook
 				 User.add(person1);//adding details into array list
 				 	
 				 Scanner input1= new Scanner(System.in);
-				 System.out.println("Press 1 for Adding-Details, Press 2 for editing details ,Press 3 for exit");
+				 System.out.println("Press 1 for Adding-Details\n 2 for exit");
 				 int option=input1.nextInt();
 				 switch(option)
 				 {
 				 case 1://adding the details
-					AddressBook person2=new AddressBook();
-					person2.details();
-					//System.out.println(person2.toString());
-					User.add(person2);
-					break;
-					
-				 case 2://editing the details
-					 System.out.println("Press 1 to edit your Firstname and press 2 to LastName");
-					 Scanner edit=new Scanner(System.in);
-					 int option1=edit.nextInt();
-					 switch(option1)
-					 {
-					 case 1:
-						 	User.get(0);
-						 	Scanner edit2=new Scanner(System.in);
-						 	String edit_firstName=edit2.nextLine();
-						 		AddressBook.first_Name=edit_firstName;
-					 }
-					 
-					 
+					   AddressBook person2=new AddressBook();
+					   person2.details();
+					   User.add(person2);
+					   break;
 				 
 				 default:
-					 break;
+				        break;
 				 }
+				 
 				 //for loop for printing all the elements in the Array list(Contacts)
 				 for(int i=0;i<User.size();i++)
 				 {
