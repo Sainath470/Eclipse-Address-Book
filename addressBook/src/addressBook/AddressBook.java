@@ -7,18 +7,11 @@ public class AddressBook
 {
 	
 		//creating variables
-	   String first_Name, last_Nam, address, city, state, email_Id;
-	   long zip_Code, phone_Number;
+
 	   
 	   		 Scanner input= new Scanner(System.in);
 	   		public void details()
-	   		{
-	   				
-				   	 System.out.println("Enter your details:\n");
-				     System.out.println("Enter your First Name:");
-				     this.first_Name=input.nextLine();
-				     System.out.println("Enter your Last Name: ");	 
-					 this.last_Nam=input.nextLine();
+        {
 					 System.out.println("Enter your Address: ");
 					 this.address=input.nextLine();
 					 System.out.println("City : ");
@@ -120,6 +113,8 @@ public class AddressBook
 	 					break;
 	 			}
 	 		}
+  
+  
 		 public static void main(String args[])
 			{
 			 
@@ -142,7 +137,7 @@ public class AddressBook
 				 int option=input1.nextInt();
 				 
 				 switch(option)
-				 {
+         {
 					 case 1:
 						
 						 person1.details();
@@ -182,7 +177,7 @@ public class AddressBook
 						 	}
 						 	default:
 						 		break;
-						 	}
+						}
 			
 				//for printing the list of contacts 
 				for(int i=0;i<User.size();i++)
