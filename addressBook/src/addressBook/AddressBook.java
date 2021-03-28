@@ -186,8 +186,7 @@ public class AddressBook
 			
 				//for printing the list of contacts 
 				for(int i=0;i<User.size();i++)
-				{
-					
+				{					
 					System.out.println(User.get(i));
 				}
 				
