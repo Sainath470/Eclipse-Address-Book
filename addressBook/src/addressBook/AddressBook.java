@@ -7,16 +7,24 @@ public class AddressBook
 {
 	
 		//creating variables
+		   String first_Name;
+	 	   String last_Name;
+	 	  String address;
+		   String city;
+		   String state;
+		   long zip_Code;
+	 	  long phone_Number;
+	 	  String email_Id;	
 
 	   
 	   		 Scanner input= new Scanner(System.in);
 	   		public void details()
-        {
-			   	 System.out.println("Enter your details:\n");
-			     System.out.println("Enter your First Name:");	
-			  	 this.first_Name=input.nextLine();
-		       System.out.println("Enter your Last Name: ");	 
-           this.last_Nam=input.nextLine();
+      			  {
+				   	 System.out.println("Enter your details:\n");
+	  	        		     System.out.println("Enter your First Name:");	
+	      			  	 this.first_Name=input.nextLine();
+	        		       	       System.out.println("Enter your Last Name: ");	 
+      				         this.last_Nam=input.nextLine();
 					 System.out.println("Enter your Address: ");
 					 this.address=input.nextLine();
 					 System.out.println("Enter your City : ");
