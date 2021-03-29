@@ -7,6 +7,14 @@ public class AddressBook
 {
 	
 		//creating variables
+		String first_Name;
+	 	   String last_Name;
+	 	  String address;
+		   String city;
+		   String state;
+		   long zip_Code;
+	 	  long phone_Number;
+	 	  String email_Id;	
 
 	   
 	   		 Scanner input= new Scanner(System.in);
